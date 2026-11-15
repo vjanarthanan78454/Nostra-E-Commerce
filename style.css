@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* ANNOUNCEMENT BAR */
+
+.offer {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.offer button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+}
+
+.navbar h1 {
+    font-size: 35px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/* SLIDER */
+
+.slider {
+    height: 450px;
+    margin: 20px;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1400");
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.slider-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.slider-content h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.slider-content button {
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+
+/* BRANDS */
+
+.brands {
+    padding: 30px;
+}
+
+.brands h2 {
+    margin-bottom: 25px;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-list h3 {
+    font-size: 25px;
+}
+
+/* PRODUCT SECTIONS */
+
+#new-arrivals,
+#most-wanted {
+    padding: 35px;
+}
+
+#new-arrivals h2,
+#most-wanted h2 {
+    margin-bottom: 25px;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+.product-card {
+    min-width: 220px;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 8px 15px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* MOST WANTED BUTTONS */
+
+#most-wanted > button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.newsletter h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.newsletter input {
+    width: 80%;
+    max-width: 700px;
+    padding: 15px;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+.newsletter button {
+    padding: 15px 25px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background: black;
+    color: white;
+    padding: 40px;
+}
+
+footer h1 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar-links a {
+        font-size: 14px;
+    }
+
+    .slider {
+        height: 300px;
+    }
+
+    .slider-content h1 {
+        font-size: 27px;
+    }
+
+    .slider-content h2 {
+        font-size: 22px;
+    }
+
+    .product-card {
+        min-width: 180px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+}
+/* Collections and Contact Pages */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+form input,
+form textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: gray;
+}
+
+//* Collections Pages *//
+
+.box{
+    width: 80%;
+    max-width: 700px;
+    padding: 15px;
+    border: 2px solid black;
+    font-size: 16px;
+    
+}

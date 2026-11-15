@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra - Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="product.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Announcement -->
+    <div class="offer" id="offer">
+        <p>Sign Up and GET 20% OFF for your first Order</p>
+        <button onclick="closeOffer()">X</button>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="#new-arrivals">New Arrival</a>
+            <a href="#most-wanted">Most Wanted</a>
+            <a href="collection.html">Collections</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <section class="slider">
+        <div class="slider-content">
+            <h1>Level Up Your Style With Our</h1>
+            <h2>Summer Collections</h2>
+            <a href="collection.html">
+                <button>Shop Now</button>
+            </a>
+        </div>
+
+        <button class="left" onclick="previousSlide()">❮</button>
+        <button class="right" onclick="nextSlide()">❯</button>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+        <h2>Brands We Love</h2>
+        <div class="brand-list">
+            <h3>Puma</h3>
+            <h3>Adidas</h3>
+            <h3>Simple</h3>
+            <h3>Leaves</h3>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div class="product-container" id="newArrivalGrid"></div>
+    </section>
+
+    <!-- Most Wanted -->
+    <section id="most-wanted">
+        <h2>Most Wanted</h2>
+
+        <button onclick="moveLeft()">❮</button>
+        <button onclick="moveRight()">❯</button>
+
+        <div class="product-container" id="wantedTrack"></div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Signup for our email newsletter to get exclusive discounts and updates.</p>
+
+        <form id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe ➜</button>
+        </form>
+        <p id="newsletterMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h1>Nostra</h1>
+        <p>The standard chunk of Lorem Ipsum used since the 1500s.</p>
+        <p>@ 2026 Nostra.com</p>
+    </footer>
+
+</body>
+</html>
